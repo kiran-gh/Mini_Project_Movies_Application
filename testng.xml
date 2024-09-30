@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="3">
+    <test verbose="2" preserve-order="true" name="Chrome_Test_Suite">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LoginPageTest"/>
+            <class name="tests.HomePageTest"/>
+            <class name="tests.PopularPageTest"/>
+            <class name="tests.MoviesPageTest"/>
+            <class name="tests.AccountsPageTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Firefox_Test_Suite">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.LoginPageTest"/>
+            <class name="tests.HomePageTest"/>
+            <class name="tests.PopularPageTest"/>
+            <class name="tests.MoviesPageTest"/>
+            <class name="tests.AccountsPageTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Edge_Test_Suite">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="tests.LoginPageTest"/>
+            <class name="tests.HomePageTest"/>
+            <class name="tests.PopularPageTest"/>
+            <class name="tests.MoviesPageTest"/>
+            <class name="tests.AccountsPageTest"/>
+        </classes>
+    </test>
+</suite>
+
+
+        <!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">-->
+<!--<suite name="All Test Suite" parallel="tests" thread-count="3">-->
+<!--    <test verbose="2" preserve-order="true" name="E:/Kiran/Next Wave/Projects/QA_MiniProject_Chrome_TestNG">-->
+<!--        <parameter name="browser" value="chrome"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.HomePageTest">-->
+<!--                <methods>-->
+<!--                    <include name="isHomePageElementsDisplayed"/>-->
+<!--                    <include name="popularPageLinkCheck"/>-->
+<!--                    <include name="accountsPageLinkCheck"/>-->
+<!--                    <include name="homePageLinkCheck"/>-->
+<!--                    <include name="searchForAMovie"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.LoginPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginPageElementsStatus"/>-->
+<!--                    <include name="welcome"/>-->
+<!--                    <include name="loginError"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.PopularPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="moviesDisplayStatus"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test verbose="2" preserve-order="true" name="E:/Kiran/Next Wave/Projects/QA_MiniProject_firefox_TestNG">-->
+<!--        <parameter name="browser" value="firefox"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.HomePageTest">-->
+<!--                <methods>-->
+<!--                    <include name="isHomePageElementsDisplayed"/>-->
+<!--                    <include name="popularPageLinkCheck"/>-->
+<!--                    <include name="accountsPageLinkCheck"/>-->
+<!--                    <include name="homePageLinkCheck"/>-->
+<!--                    <include name="searchForAMovie"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.LoginPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginPageElementsStatus"/>-->
+<!--                    <include name="welcome"/>-->
+<!--                    <include name="loginError"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.PopularPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="moviesDisplayStatus"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    <test verbose="2" preserve-order="true" name="E:/Kiran/Next Wave/Projects/QA_MiniProject_edge_TestNG">-->
+<!--        <parameter name="browser" value="edge"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.HomePageTest">-->
+<!--                <methods>-->
+<!--                    <include name="isHomePageElementsDisplayed"/>-->
+<!--                    <include name="popularPageLinkCheck"/>-->
+<!--                    <include name="accountsPageLinkCheck"/>-->
+<!--                    <include name="homePageLinkCheck"/>-->
+<!--                    <include name="searchForAMovie"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.LoginPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="loginPageElementsStatus"/>-->
+<!--                    <include name="welcome"/>-->
+<!--                    <include name="loginError"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--            <class name="tests.PopularPageTest">-->
+<!--                <methods>-->
+<!--                    <include name="moviesDisplayStatus"/>-->
+<!--                </methods>-->
+<!--            </class>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--</suite>-->
